@@ -1,12 +1,12 @@
 all:
-	@echo 'Enter an option: clean array linked_list string style'
+	@echo 'Enter an option: clean merge_sort linked_list string style'
 
 clean:
-	rm -f array linked_list string *.orig
+	rm -f merge_sort linked_list string *.orig
 
-array:
-	gcc -o array array.c
-	./array
+merge_sort:
+	gcc -o merge_sort merge_sort.c
+	./merge_sort
 
 linked_list:
 	gcc -o linked_list linked_list.c
