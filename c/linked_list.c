@@ -1,3 +1,8 @@
+/*
+ * Various linked list problems.
+ */
+
+#include <math.h>
 #include <stdio.h>
 #include <string.h>
 #include <assert.h>
