@@ -1,4 +1,4 @@
-TARGETS=merge_sort linked_list string primes
+TARGETS=linked_list merge_sort primes select string
 
 all:
 	@echo 'Enter an option: clean style <target>'
