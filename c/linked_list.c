@@ -49,6 +49,17 @@ static void listPrint(node_t* head)
     printf("\r\n");
 }
 
+static void listDelete(node_t* head)
+{
+    node_t* curr = head;
+    while (curr != NULL)
+    {
+        node_t* tmp = curr->next;
+        free(curr);
+        curr = tmp;
+    }
+}
+
 static node_t* listReverse(node_t* head)
 {
     node_t* prev = NULL;
@@ -153,6 +164,8 @@ int main(void)
     head = listReverseRecursive(NULL, head);
     listPrint(head);
 
+    listDelete(head);
+
     node_t* head2 = makeNode(10);
     listAdd(head2, 9);
     listAdd(head2, 8);
@@ -166,6 +179,8 @@ int main(void)
     printf("\r\nSorted linked list:\r\n");
     head2 = listSort(head2);
     listPrint(head2);
+
+    listDelete(head2);
 
     return 0;
 }

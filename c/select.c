@@ -46,4 +46,9 @@ int main(void)
     {
         printf("%d: %d\r\n", i, elem[i]);
     }
+
+    free(pool);
+    free(elem);
+
+    return 0;
 }
