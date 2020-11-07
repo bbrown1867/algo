@@ -1,4 +1,4 @@
-TARGETS=linked_list merge_sort primes select string
+TARGETS=linked_list merge_sort primes queue select string
 
 all:
 	@echo 'Enter an option: clean style <target>'
